@@ -1,59 +1,72 @@
-
-/* CSS for the footer */
-.footer-container {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+footer {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .footer-section h3 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00ffff, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
 }
 
 .footer-section ul li {
-    margin: 8px 0;
+  margin-bottom: 0.6rem;
 }
 
 .footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    text-decoration: underline;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-.contact p {
-    margin: 8px 0;
+.footer-section.contact p {
+  color: #94a3b8;
+  margin: 0.4rem 0;
 }
 
-.contact p i.icon {
-    margin-right: 5px;
+.footer-section.contact a {
+  color: #3b82f6;
+  text-decoration: none;
 }
 
-.contact a {
-    color: #fff;
-    text-decoration: none;
+.footer-section.contact a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
 }
 
-.contact a:hover {
-    text-decoration: underline;
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
 }
 
-
+.footer-bottom p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
